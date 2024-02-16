@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "35dda7a7-cc00-4809-84ba-6c059e615cbe",
+		"name": "springbootEndpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "32257347"
+	},
+	"item": [
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzA4MDk4NzI2LCJleHAiOjE3MDgxMzQ3MjZ9.vGiPTFHLtPE5Ilw8pvRNVNgjru7UN1tF43utuErjBQDNqNFmCtoLqqF4BSh91c3biB2zYQPGZhlFoCkWW00wQg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"username\": \"user\",\r\n    \"password\": \"password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9393/secure"
+			},
+			"response": []
+		},
+		{
+			"name": "secure",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiaWF0IjoxNzA4MDk4NzI2LCJleHAiOjE3MDgxMzQ3MjZ9.vGiPTFHLtPE5Ilw8pvRNVNgjru7UN1tF43utuErjBQDNqNFmCtoLqqF4BSh91c3biB2zYQPGZhlFoCkWW00wQg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"username\": \"user\",\r\n    \"password\": \"password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9393/secure"
+			},
+			"response": []
+		}
+	]
+}
